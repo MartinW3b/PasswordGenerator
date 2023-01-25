@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Google Fonts -->
+	      <link rel="preconnect" href="https://fonts.googleapis.com">
+	      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="hero">
+            <h1>Generate a </br><span>random password<span></h1>
+            <p class="text-style">Never use an insecure password again.</p>
+            <div class="button">
+                <button class="btn-style" id="button-el">Generate</button>
+                <input type="text" id="inpt-value">
+            </div>
+            <div class="checkbox">
+                <label><input id="symbols-el" type="checkbox">No symbols<label>
+                <label class="right-box"><input class="checkbox-box" id="numbers-el" type="checkbox">No numbers</label>
+                <p class="errormsg" id="error-msg"></p>
+            </div>
+            <div class="wrap">
+                <p class="inpt-field" onclick="copyit()" id="password-one-el">	•	•	•	• </p>
+                <p class="inpt-field" onclick="copyittwo()" id="password-two-el">	•	•	•	• </p>
+            </div>
+            <p class="text-style">Click on the generated password to copy</p>
+        </div>
+        <script src="index.pack.js"></script>
+    </body>
+</html>
